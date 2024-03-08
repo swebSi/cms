@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_badges_carousels",
+  "info": {
+    "displayName": "badges-carousel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "badges": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.badge"
+    }
+  }
+}

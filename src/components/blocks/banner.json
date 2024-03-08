@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_banners",
+  "info": {
+    "displayName": "Banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.button"
+    }
+  }
+}

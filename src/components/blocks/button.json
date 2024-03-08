@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_blocks_buttons",
+  "info": {
+    "displayName": "button",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "gbtn-1",
+        "gbtn-2",
+        "gbtn-3"
+      ],
+      "default": "gbtn-1"
+    },
+    "href": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    }
+  }
+}
