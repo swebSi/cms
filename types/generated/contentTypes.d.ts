@@ -371,7 +371,7 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
     description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   pluginOptions: {
     i18n: {
@@ -395,7 +395,6 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::homepage.homepage',
       'oneToOne',
