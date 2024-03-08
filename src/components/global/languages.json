@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_global_languages",
+  "info": {
+    "displayName": "languages"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "flag": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "locale": {
+      "type": "string"
+    }
+  }
+}

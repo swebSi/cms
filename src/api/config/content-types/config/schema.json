@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "configs",
+  "info": {
+    "singularName": "config",
+    "pluralName": "configs",
+    "displayName": "config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "configuration": {
+      "displayName": "config",
+      "type": "component",
+      "repeatable": true,
+      "component": "global.config"
+    }
+  }
+}

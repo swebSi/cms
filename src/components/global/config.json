@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_global_configs",
+  "info": {
+    "displayName": "config",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string",
+      "required": true,
+      "regex": "^[a-z]{2}-[A-Z]{2}$",
+      "unique": false
+    },
+    "language": {
+      "displayName": "languages",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.languages"
+    },
+    "brand": {
+      "type": "enumeration",
+      "enum": [
+        "NIPT",
+        "NIFTY"
+      ],
+      "required": true,
+      "default": "NIPT"
+    },
+    "prices": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "checkout": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "paypal": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "clinics": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "published": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

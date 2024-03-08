@@ -52,6 +52,46 @@ export interface BlocksHeroSection extends Schema.Component {
   };
 }
 
+export interface GlobalConfig extends Schema.Component {
+  collectionName: 'components_global_configs';
+  info: {
+    displayName: 'config';
+    description: '';
+  };
+  attributes: {
+    country: Attribute.String;
+    locale: Attribute.String & Attribute.Required;
+    language: Attribute.Component<'global.languages'>;
+    brand: Attribute.Enumeration<['NIPT', 'NIFTY']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'NIPT'>;
+    prices: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
+    checkout: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
+    paypal: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
+    clinics: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
+    published: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
+  };
+}
+
+export interface GlobalLanguages extends Schema.Component {
+  collectionName: 'components_global_languages';
+  info: {
+    displayName: 'languages';
+  };
+  attributes: {
+    language: Attribute.String;
+    name: Attribute.String;
+    flag: Attribute.Media;
+    locale: Attribute.String;
+  };
+}
+
 export interface GlobalNavigation extends Schema.Component {
   collectionName: 'components_global_navigations';
   info: {
@@ -105,6 +145,8 @@ declare module '@strapi/types' {
       'blocks.banner': BlocksBanner;
       'blocks.button': BlocksButton;
       'blocks.hero-section': BlocksHeroSection;
+      'global.config': GlobalConfig;
+      'global.languages': GlobalLanguages;
       'global.navigation': GlobalNavigation;
       'shared.badge': SharedBadge;
       'shared.link': SharedLink;
