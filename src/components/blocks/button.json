@@ -21,12 +21,6 @@
     },
     "href": {
       "type": "string"
-    },
-    "startDate": {
-      "type": "datetime"
-    },
-    "endDate": {
-      "type": "datetime"
     }
   }
 }

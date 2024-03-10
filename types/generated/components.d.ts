@@ -20,6 +20,8 @@ export interface BlocksBanner extends Schema.Component {
   attributes: {
     text: Attribute.String;
     cta: Attribute.Component<'blocks.button'>;
+    startDate: Attribute.DateTime;
+    endDate: Attribute.DateTime;
   };
 }
 
@@ -34,15 +36,14 @@ export interface BlocksButton extends Schema.Component {
     type: Attribute.Enumeration<['gbtn-1', 'gbtn-2', 'gbtn-3']> &
       Attribute.DefaultTo<'gbtn-1'>;
     href: Attribute.String;
-    startDate: Attribute.DateTime;
-    endDate: Attribute.DateTime;
   };
 }
 
 export interface BlocksHeroSection extends Schema.Component {
   collectionName: 'components_blocks_hero_sections';
   info: {
-    displayName: 'hero-section';
+    displayName: 'intro-hero';
+    description: '';
   };
   attributes: {
     title: Attribute.String;

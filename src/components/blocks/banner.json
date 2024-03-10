@@ -13,6 +13,12 @@
       "type": "component",
       "repeatable": false,
       "component": "blocks.button"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
     }
   }
 }
