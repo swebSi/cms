@@ -19,10 +19,6 @@
     },
     "title": {
       "type": "string"
-    },
-    "updated": {
-      "type": "boolean",
-      "default": false
     }
   }
 }

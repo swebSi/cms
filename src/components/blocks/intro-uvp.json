@@ -11,6 +11,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.uvp-points"
+    },
+    "updated": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }
