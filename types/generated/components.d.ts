@@ -66,6 +66,7 @@ export interface BlocksIntroHero extends Schema.Component {
     label: Attribute.String;
     background: Attribute.Media;
     button: Attribute.String;
+    updated: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
