@@ -47,10 +47,20 @@ export interface BlocksIntroHero extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    text: Attribute.String;
+    text: Attribute.Text;
     label: Attribute.String;
     background: Attribute.Media;
     button: Attribute.String;
+  };
+}
+
+export interface BlocksIntroUvp extends Schema.Component {
+  collectionName: 'components_blocks_intro_uvps';
+  info: {
+    displayName: 'intro-uvp';
+  };
+  attributes: {
+    points: Attribute.Component<'shared.uvp-points', true>;
   };
 }
 
@@ -140,6 +150,18 @@ export interface SharedRatings extends Schema.Component {
   };
 }
 
+export interface SharedUvpPoints extends Schema.Component {
+  collectionName: 'components_shared_uvp_points';
+  info: {
+    displayName: 'uvp-points';
+  };
+  attributes: {
+    image: Attribute.Media;
+    text: Attribute.String;
+    title: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -147,12 +169,14 @@ declare module '@strapi/types' {
       'blocks.banner': BlocksBanner;
       'blocks.button': BlocksButton;
       'blocks.intro-hero': BlocksIntroHero;
+      'blocks.intro-uvp': BlocksIntroUvp;
       'global.config': GlobalConfig;
       'global.languages': GlobalLanguages;
       'global.navigation': GlobalNavigation;
       'shared.badge': SharedBadge;
       'shared.link': SharedLink;
       'shared.ratings': SharedRatings;
+      'shared.uvp-points': SharedUvpPoints;
     }
   }
 }

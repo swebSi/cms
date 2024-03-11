@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_intro_uvps",
+  "info": {
+    "displayName": "intro-uvp"
+  },
+  "options": {},
+  "attributes": {
+    "points": {
+      "displayName": "uvp-points",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.uvp-points"
+    }
+  }
+}
