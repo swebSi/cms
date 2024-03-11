@@ -12,11 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "configuration": {
+    "configurations": {
       "displayName": "config",
       "type": "component",
       "repeatable": true,
       "component": "global.config"
+    },
+    "locales": {
+      "type": "json"
     }
   }
 }
