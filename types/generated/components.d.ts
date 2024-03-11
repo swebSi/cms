@@ -176,6 +176,7 @@ export interface SharedUvpPoints extends Schema.Component {
     image: Attribute.Media;
     text: Attribute.Text;
     title: Attribute.String;
+    updated: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
