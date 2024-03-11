@@ -850,6 +850,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     singularName: 'home';
     pluralName: 'homes';
     displayName: 'home';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -865,7 +866,8 @@ export interface ApiHomeHome extends Schema.SingleType {
         'blocks.badges-carousel',
         'blocks.banner',
         'blocks.button',
-        'blocks.intro-hero'
+        'blocks.intro-hero',
+        'blocks.intro-uvp'
       ]
     > &
       Attribute.SetPluginOptions<{
