@@ -867,7 +867,8 @@ export interface ApiHomeHome extends Schema.SingleType {
         'blocks.banner',
         'blocks.button',
         'blocks.intro-hero',
-        'blocks.intro-uvp'
+        'blocks.intro-uvp',
+        'blocks.influencers-carousel'
       ]
     > &
       Attribute.SetPluginOptions<{

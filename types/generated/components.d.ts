@@ -39,6 +39,21 @@ export interface BlocksButton extends Schema.Component {
   };
 }
 
+export interface BlocksInfluencersCarousel extends Schema.Component {
+  collectionName: 'components_blocks_influencers_carousels';
+  info: {
+    displayName: 'influencers-carousel';
+    description: '';
+  };
+  attributes: {
+    button: Attribute.String;
+    title: Attribute.String;
+    subtitle: Attribute.String;
+    hideRatings: Attribute.Boolean & Attribute.DefaultTo<false>;
+    ratingsText: Attribute.String;
+  };
+}
+
 export interface BlocksIntroHero extends Schema.Component {
   collectionName: 'components_blocks_intro_heroes';
   info: {
@@ -168,6 +183,7 @@ declare module '@strapi/types' {
       'blocks.badges-carousel': BlocksBadgesCarousel;
       'blocks.banner': BlocksBanner;
       'blocks.button': BlocksButton;
+      'blocks.influencers-carousel': BlocksInfluencersCarousel;
       'blocks.intro-hero': BlocksIntroHero;
       'blocks.intro-uvp': BlocksIntroUvp;
       'global.config': GlobalConfig;

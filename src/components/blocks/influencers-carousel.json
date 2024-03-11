@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_influencers_carousels",
+  "info": {
+    "displayName": "influencers-carousel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "button": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "hideRatings": {
+      "type": "boolean",
+      "default": false
+    },
+    "ratingsText": {
+      "type": "string"
+    }
+  }
+}
