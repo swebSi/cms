@@ -1,25 +1,30 @@
 {
   "collectionName": "components_blocks_intro_heroes",
   "info": {
-    "displayName": "intro-hero"
+    "displayName": "intro-hero",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "description": {
+    "text": {
       "type": "string"
     },
     "label": {
       "type": "string"
     },
     "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "button": {
+      "type": "string"
     }
   }
 }

@@ -43,12 +43,14 @@ export interface BlocksIntroHero extends Schema.Component {
   collectionName: 'components_blocks_intro_heroes';
   info: {
     displayName: 'intro-hero';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
-    description: Attribute.String;
+    text: Attribute.String;
     label: Attribute.String;
     background: Attribute.Media;
+    button: Attribute.String;
   };
 }
 
