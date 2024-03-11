@@ -844,13 +844,12 @@ export interface ApiConfigConfig extends Schema.SingleType {
   };
 }
 
-export interface ApiHomepageHomepage extends Schema.SingleType {
-  collectionName: 'homepages';
+export interface ApiHomeHome extends Schema.SingleType {
+  collectionName: 'homes';
   info: {
-    singularName: 'homepage';
-    pluralName: 'homepages';
-    displayName: 'homepage';
-    description: '';
+    singularName: 'home';
+    pluralName: 'homes';
+    displayName: 'home';
   };
   options: {
     draftAndPublish: false;
@@ -862,14 +861,13 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
   };
   attributes: {
     content: Attribute.DynamicZone<
-      ['blocks.badges-carousel', 'blocks.intro-hero']
+      [
+        'blocks.badges-carousel',
+        'blocks.banner',
+        'blocks.button',
+        'blocks.intro-hero'
+      ]
     > &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    banner: Attribute.Component<'blocks.banner'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -877,22 +875,14 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::homepage.homepage',
-      'oneToOne',
-      'admin::user'
-    > &
+    createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
       Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::homepage.homepage',
-      'oneToOne',
-      'admin::user'
-    > &
+    updatedBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     localizations: Attribute.Relation<
-      'api::homepage.homepage',
+      'api::home.home',
       'oneToMany',
-      'api::homepage.homepage'
+      'api::home.home'
     >;
     locale: Attribute.String;
   };
@@ -918,7 +908,7 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::banner.banner': ApiBannerBanner;
       'api::config.config': ApiConfigConfig;
-      'api::homepage.homepage': ApiHomepageHomepage;
+      'api::home.home': ApiHomeHome;
     }
   }
 }

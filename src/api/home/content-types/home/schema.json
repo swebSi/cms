@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "homes",
   "info": {
-    "singularName": "homepage",
-    "pluralName": "homepages",
-    "displayName": "homepage",
-    "description": ""
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home"
   },
   "options": {
     "draftAndPublish": false
@@ -25,18 +24,10 @@
       "type": "dynamiczone",
       "components": [
         "blocks.badges-carousel",
+        "blocks.banner",
+        "blocks.button",
         "blocks.intro-hero"
       ]
-    },
-    "banner": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "blocks.banner"
     }
   }
 }
