@@ -39,16 +39,15 @@ export interface BlocksButton extends Schema.Component {
   };
 }
 
-export interface BlocksHeroSection extends Schema.Component {
-  collectionName: 'components_blocks_hero_sections';
+export interface BlocksIntroHero extends Schema.Component {
+  collectionName: 'components_blocks_intro_heroes';
   info: {
     displayName: 'intro-hero';
-    description: '';
   };
   attributes: {
     title: Attribute.String;
-    description: Attribute.Text;
-    tagline: Attribute.String;
+    description: Attribute.String;
+    label: Attribute.String;
     background: Attribute.Media;
   };
 }
@@ -145,7 +144,7 @@ declare module '@strapi/types' {
       'blocks.badges-carousel': BlocksBadgesCarousel;
       'blocks.banner': BlocksBanner;
       'blocks.button': BlocksButton;
-      'blocks.hero-section': BlocksHeroSection;
+      'blocks.intro-hero': BlocksIntroHero;
       'global.config': GlobalConfig;
       'global.languages': GlobalLanguages;
       'global.navigation': GlobalNavigation;

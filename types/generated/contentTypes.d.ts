@@ -862,7 +862,7 @@ export interface ApiHomepageHomepage extends Schema.SingleType {
   };
   attributes: {
     content: Attribute.DynamicZone<
-      ['blocks.badges-carousel', 'blocks.hero-section']
+      ['blocks.badges-carousel', 'blocks.intro-hero']
     > &
       Attribute.SetPluginOptions<{
         i18n: {

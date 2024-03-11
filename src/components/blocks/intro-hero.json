@@ -1,8 +1,7 @@
 {
-  "collectionName": "components_blocks_hero_sections",
+  "collectionName": "components_blocks_intro_heroes",
   "info": {
-    "displayName": "intro-hero",
-    "description": ""
+    "displayName": "intro-hero"
   },
   "options": {},
   "attributes": {
@@ -10,18 +9,17 @@
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "string"
     },
-    "tagline": {
+    "label": {
       "type": "string"
     },
     "background": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

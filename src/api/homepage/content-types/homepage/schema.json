@@ -25,7 +25,7 @@
       "type": "dynamiczone",
       "components": [
         "blocks.badges-carousel",
-        "blocks.hero-section"
+        "blocks.intro-hero"
       ]
     },
     "banner": {
