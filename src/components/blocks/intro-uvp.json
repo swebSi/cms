@@ -1,7 +1,8 @@
 {
   "collectionName": "components_blocks_intro_uvps",
   "info": {
-    "displayName": "intro-uvp"
+    "displayName": "intro-uvp",
+    "description": ""
   },
   "options": {},
   "attributes": {

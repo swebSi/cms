@@ -1,19 +1,21 @@
 {
   "collectionName": "components_shared_uvp_points",
   "info": {
-    "displayName": "uvp-points"
+    "displayName": "uvp-points",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "text": {
-      "type": "string"
+      "type": "text"
     },
     "title": {
       "type": "string"

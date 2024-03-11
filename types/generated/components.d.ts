@@ -73,6 +73,7 @@ export interface BlocksIntroUvp extends Schema.Component {
   collectionName: 'components_blocks_intro_uvps';
   info: {
     displayName: 'intro-uvp';
+    description: '';
   };
   attributes: {
     points: Attribute.Component<'shared.uvp-points', true>;
@@ -169,10 +170,11 @@ export interface SharedUvpPoints extends Schema.Component {
   collectionName: 'components_shared_uvp_points';
   info: {
     displayName: 'uvp-points';
+    description: '';
   };
   attributes: {
     image: Attribute.Media;
-    text: Attribute.String;
+    text: Attribute.Text;
     title: Attribute.String;
   };
 }
