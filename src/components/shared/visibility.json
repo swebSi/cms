@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_shared_visibilities",
+  "info": {
+    "displayName": "visibility"
+  },
+  "options": {},
+  "attributes": {
+    "prices": {
+      "type": "boolean",
+      "default": false
+    },
+    "checkout": {
+      "type": "boolean",
+      "default": false
+    },
+    "paypal": {
+      "type": "boolean",
+      "default": false
+    },
+    "promoCode": {
+      "type": "boolean",
+      "default": false
+    },
+    "clinics": {
+      "type": "boolean",
+      "default": false
+    },
+    "checkoutSelectClinic": {
+      "type": "boolean",
+      "default": false
+    },
+    "hiddenCheckout": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -91,21 +91,11 @@ export interface GlobalConfig extends Schema.Component {
   attributes: {
     country: Attribute.String;
     locale: Attribute.String & Attribute.Required;
-    language: Attribute.Component<'global.languages'>;
     brand: Attribute.Enumeration<['NIPT', 'NIFTY']> &
       Attribute.Required &
       Attribute.DefaultTo<'NIPT'>;
-    prices: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
-    checkout: Attribute.Boolean &
-      Attribute.Required &
-      Attribute.DefaultTo<false>;
-    paypal: Attribute.Boolean & Attribute.Required & Attribute.DefaultTo<false>;
-    clinics: Attribute.Boolean &
-      Attribute.Required &
-      Attribute.DefaultTo<false>;
-    published: Attribute.Boolean &
-      Attribute.Required &
-      Attribute.DefaultTo<false>;
+    visibility: Attribute.Component<'shared.visibility'>;
+    partnerId: Attribute.String;
   };
 }
 
@@ -181,6 +171,22 @@ export interface SharedUvpPoints extends Schema.Component {
   };
 }
 
+export interface SharedVisibility extends Schema.Component {
+  collectionName: 'components_shared_visibilities';
+  info: {
+    displayName: 'visibility';
+  };
+  attributes: {
+    prices: Attribute.Boolean & Attribute.DefaultTo<false>;
+    checkout: Attribute.Boolean & Attribute.DefaultTo<false>;
+    paypal: Attribute.Boolean & Attribute.DefaultTo<false>;
+    promoCode: Attribute.Boolean & Attribute.DefaultTo<false>;
+    clinics: Attribute.Boolean & Attribute.DefaultTo<false>;
+    checkoutSelectClinic: Attribute.Boolean & Attribute.DefaultTo<false>;
+    hiddenCheckout: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -197,6 +203,7 @@ declare module '@strapi/types' {
       'shared.link': SharedLink;
       'shared.ratings': SharedRatings;
       'shared.uvp-points': SharedUvpPoints;
+      'shared.visibility': SharedVisibility;
     }
   }
 }

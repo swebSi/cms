@@ -15,12 +15,6 @@
       "regex": "^[a-z]{2}-[A-Z]{2}$",
       "unique": false
     },
-    "language": {
-      "displayName": "languages",
-      "type": "component",
-      "repeatable": false,
-      "component": "global.languages"
-    },
     "brand": {
       "type": "enumeration",
       "enum": [
@@ -30,30 +24,14 @@
       "required": true,
       "default": "NIPT"
     },
-    "prices": {
-      "type": "boolean",
-      "default": false,
-      "required": true
+    "visibility": {
+      "displayName": "visibility",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.visibility"
     },
-    "checkout": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "paypal": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "clinics": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "published": {
-      "type": "boolean",
-      "default": false,
-      "required": true
+    "partnerId": {
+      "type": "string"
     }
   }
 }
