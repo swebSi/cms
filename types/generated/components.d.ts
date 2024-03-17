@@ -165,11 +165,12 @@ export interface SharedPackages extends Schema.Component {
   collectionName: 'components_shared_packages';
   info: {
     displayName: 'packages';
+    description: '';
   };
   attributes: {
     productId: Attribute.Enumeration<['basic', 'standard', 'plus', 'twin']> &
       Attribute.Required;
-    Title: Attribute.String;
+    title: Attribute.String;
   };
 }
 

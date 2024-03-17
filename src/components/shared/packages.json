@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_packages",
   "info": {
-    "displayName": "packages"
+    "displayName": "packages",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -15,7 +16,7 @@
       ],
       "required": true
     },
-    "Title": {
+    "title": {
       "type": "string"
     }
   }
