@@ -82,6 +82,19 @@ export interface BlocksIntroUvp extends Schema.Component {
   };
 }
 
+export interface BlocksPackagesHero extends Schema.Component {
+  collectionName: 'components_blocks_packages_heroes';
+  info: {
+    displayName: 'packages-hero';
+    description: '';
+  };
+  attributes: {
+    button: Attribute.String;
+    Package: Attribute.Component<'shared.packages', true>;
+    text: Attribute.String;
+  };
+}
+
 export interface GlobalConfig extends Schema.Component {
   collectionName: 'components_global_configs';
   info: {
@@ -147,6 +160,18 @@ export interface SharedLink extends Schema.Component {
   };
 }
 
+export interface SharedPackages extends Schema.Component {
+  collectionName: 'components_shared_packages';
+  info: {
+    displayName: 'packages';
+  };
+  attributes: {
+    productId: Attribute.Enumeration<['basic', 'standard', 'plus', 'twin']> &
+      Attribute.Required;
+    Title: Attribute.String;
+  };
+}
+
 export interface SharedRatings extends Schema.Component {
   collectionName: 'components_shared_ratings';
   info: {
@@ -196,11 +221,13 @@ declare module '@strapi/types' {
       'blocks.influencers-carousel': BlocksInfluencersCarousel;
       'blocks.intro-hero': BlocksIntroHero;
       'blocks.intro-uvp': BlocksIntroUvp;
+      'blocks.packages-hero': BlocksPackagesHero;
       'global.config': GlobalConfig;
       'global.languages': GlobalLanguages;
       'global.navigation': GlobalNavigation;
       'shared.badge': SharedBadge;
       'shared.link': SharedLink;
+      'shared.packages': SharedPackages;
       'shared.ratings': SharedRatings;
       'shared.uvp-points': SharedUvpPoints;
       'shared.visibility': SharedVisibility;

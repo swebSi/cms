@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_packages_heroes",
+  "info": {
+    "displayName": "packages-hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "button": {
+      "type": "string"
+    },
+    "Package": {
+      "displayName": "packages",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.packages"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

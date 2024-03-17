@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_packages",
+  "info": {
+    "displayName": "packages"
+  },
+  "options": {},
+  "attributes": {
+    "productId": {
+      "type": "enumeration",
+      "enum": [
+        "basic",
+        "standard",
+        "plus",
+        "twin"
+      ],
+      "required": true
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

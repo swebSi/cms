@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "packages",
+  "info": {
+    "singularName": "package",
+    "pluralName": "packages",
+    "displayName": "package",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.badges-carousel",
+        "blocks.banner",
+        "blocks.button",
+        "blocks.influencers-carousel",
+        "blocks.intro-hero",
+        "blocks.intro-uvp",
+        "blocks.packages-hero"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
