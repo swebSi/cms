@@ -9,13 +9,16 @@
     "button": {
       "type": "string"
     },
-    "Package": {
+    "packages": {
       "displayName": "packages",
       "type": "component",
       "repeatable": true,
       "component": "shared.packages"
     },
     "text": {
+      "type": "string"
+    },
+    "title": {
       "type": "string"
     }
   }

@@ -90,8 +90,9 @@ export interface BlocksPackagesHero extends Schema.Component {
   };
   attributes: {
     button: Attribute.String;
-    Package: Attribute.Component<'shared.packages', true>;
+    packages: Attribute.Component<'shared.packages', true>;
     text: Attribute.String;
+    title: Attribute.String;
   };
 }
 

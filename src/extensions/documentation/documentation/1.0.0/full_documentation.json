@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-03-17T15:18:39.398Z"
+    "x-generation-date": "2024-03-17T15:45:26.450Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2725,13 +2725,16 @@
           "button": {
             "type": "string"
           },
-          "Package": {
+          "packages": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/SharedPackagesComponent"
             }
           },
           "text": {
+            "type": "string"
+          },
+          "title": {
             "type": "string"
           }
         }
